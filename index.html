@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TrainScheduler</title>
+    
+   <!-- Materialize Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <!--Link to CSS-->
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+
+
+    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+   
+  </head>
+
+  <body>
+
+    <nav class="white" role="navigation">
+    <div class="nav-wrapper container">
+      <!-- Logo #1-->
+      <a id="logo-container" href="#" class="brand-logo">St. Paul Train Schedule!</a>
+      <ul class="right hide-on-med-and-down">
+        <!-- Admin Contact Link -->
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+
+    <div class="container">
+    <div class="section">
+      <div class="row">
+        <div class="col s12 center">
+         <table class="striped">
+                <thead>
+                  <tr>
+                    <th>Train Name<div id ="TrainName"></div></th>
+                    <th>Destination<div id="Destination"></div></th>
+                    <th>Frequency (min)<div id="Frequency"></div></th>
+                    <th>Next Arrival<div id="NextArrival"></div></th>
+                    <th>Minutes Away<div id="MinutesAway"></div></th>
+                  </tr>
+                </thead>
+                <tbody>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+
+    <div class="container">
+    <div class="section">
+      <form class="col s12 m4">
+        <!-- Add train Search Input -->
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="search" type="search" required>
+            <label class="label-icon" for="search"><i class="material-icons">Enter Train Name</i></label>
+            <i class="material-icons">close</i>
+          </div>
+        <!-- Submit Button -->
+        <div class="row">
+          <div class="btn-large waves-effect waves-light teal lighten-1" id="submit" type="submit" value="Event Search">Submit</div>
+          </div>
+      </form>
+    </div>
+        </div>
+
+              <!-- FORM-->
+
+              <form role="form">
+                <div class="form-group">
+                  <label for="name-input">Train Name</label>
+                  <input class="form-control" id="name-input" type="text">
+                </div>
+
+                <div class="form-group">
+                  <label for="destination-input">Destination</label>
+                  <input class="form-control" id="destination-input" type="text">
+                </div>
+
+                <div class="form-group">
+                  <label for="start1-input">Train (HH:mm - military time)</label>
+                  <input class="form-control" id="start1-input" type="text">
+                </div>
+
+                <div class="form-group">
+                  <label for="frequency1-input">Frequency1 (min):</label>
+                  <input class="form-control" id="frequency1-input" type="text">  
+                </div>
+
+                
+
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    
+  <script type="text/javascript" src="assets/javascript/a.js"></script>
+
+    
+    
+  </body>
+
+</html>
